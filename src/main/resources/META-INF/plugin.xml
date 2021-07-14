@@ -1,22 +1,37 @@
 <idea-plugin>
-    <id>org.example.pppurple.manually-select-opened-file</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <!-- https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+  <id>org.example.pppurple.manually-select-opened-file</id>
+  <name>Manually Select Opened File</name>
+  <change-notes>Initial release of the plugin.</change-notes>
+  <version>1.0.0</version>
+  <vendor url="https://github.com/pppurple">pppurple</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+  <description><![CDATA[
+    <h1>Manually Select Opened File</h1>
+    <p>Manually select opened file without focusing on the project view.</p>
+    <h2>Usage</h2>
+    <ol>
+      <li>Install the plugin</li>
+      <li>Default keymap is <code>Command + Ctrl + S</code> (on Windows <code>Win + Ctrl + S</code>)</li>
+    </ol>
     ]]></description>
 
-    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
-    <depends>com.intellij.modules.platform</depends>
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
+  <!-- https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html?from=jetbrains.org -->
+  <idea-version since-build="201" />
 
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action id="pppurple.ManuallySelectOpenedFileAction" class="pppurple.ManuallySelectOpenedFileAction"
+            text="Manually Select Opened File"
+            description="Manually select opened file without focusing on the project view.">
+      <add-to-group group-id="FileChooser" anchor="last" />
+      <keyboard-shortcut keymap="$default" first-keystroke="meta control S" />
+    </action>
+  </actions>
 </idea-plugin>

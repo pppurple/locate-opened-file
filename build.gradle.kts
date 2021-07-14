@@ -16,10 +16,14 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "2020.3.2"
+    version = "2021.1"
+    updateSinceUntilBuild = false
 }
+
 tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
-    changeNotes("""
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>""")
+    changeNotes(
+      """
+      Initial release of the plugin.
+      """
+    )
 }
