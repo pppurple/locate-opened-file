@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.example.pppurple"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
