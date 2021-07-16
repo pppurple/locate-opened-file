@@ -21,7 +21,8 @@
   <depends>com.intellij.modules.platform</depends>
 
   <!-- https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html?from=jetbrains.org -->
-  <idea-version since-build="201" />
+  <!-- defined in build.gradle.kts -->
+  <!-- <idea-version since-build="201" /> -->
 
   <extensions defaultExtensionNs="com.intellij">
   </extensions>

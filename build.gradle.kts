@@ -1,6 +1,6 @@
 plugins {
-    id("org.jetbrains.intellij") version "0.7.2"
-    kotlin("jvm") version "1.4.31"
+    id("org.jetbrains.intellij") version "1.1.2"
+    kotlin("jvm") version "1.4.32"
 }
 
 group = "org.example.pppurple"
@@ -16,14 +16,18 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "2021.1"
-    updateSinceUntilBuild = false
+    version.set("2021.1")
+    updateSinceUntilBuild.set(false)
 }
 
-tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
-    changeNotes(
-      """
-      Initial release of the plugin.
-      """
-    )
+tasks {
+    patchPluginXml {
+        // https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html
+        sinceBuild.set("201")
+        changeNotes.set(
+            """
+            Initial release of the plugin.
+            """
+        )
+    }
 }
