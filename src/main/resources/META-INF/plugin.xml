@@ -1,6 +1,6 @@
 <idea-plugin>
   <!-- https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-  <id>org.example.pppurple.manually-select-opened-file</id>
+  <id>com.github.pppurple.manually-select-opened-file</id>
   <name>Manually Select Opened File</name>
   <change-notes>Initial release of the plugin.</change-notes>
   <version>1.0.0</version>
