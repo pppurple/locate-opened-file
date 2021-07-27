@@ -36,7 +36,7 @@ class ManuallySelectOpenedFileAction : AnAction() {
         context.selectIn(target, false)
     }
 
-    private fun getView(project:Project) :ProjectViewImpl? {
+    private fun getView(project: Project): ProjectViewImpl? {
         return project.let { ProjectView.getInstance(it) as? ProjectViewImpl }
     }
 

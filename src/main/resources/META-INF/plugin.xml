@@ -12,7 +12,7 @@
     <h2>Usage</h2>
     <ol>
       <li>Install the plugin</li>
-      <li>Default keymap is <code>Command + Ctrl + S</code> (on Windows <code>Shift + Ctrl + S</code>)</li>
+      <li>Default keymap is <code>Shift + Ctrl + S</code></li>
     </ol>
     ]]></description>
 
@@ -34,8 +34,8 @@
       <add-to-group group-id="FileChooser" anchor="last" />
       <!-- keymaps are defined as constants in the com.intellij.openapi.keymap.KeymapManager -->
       <!-- https://plugins.jetbrains.com/docs/intellij/basic-action-system.html#action-declaration-reference -->
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="shift control S" />
       <keyboard-shortcut keymap="$default" first-keystroke="shift control S" />
-      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta control S" />
     </action>
   </actions>
 </idea-plugin>
