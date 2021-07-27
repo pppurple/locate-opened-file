@@ -3,7 +3,7 @@ plugins {
     kotlin("jvm") version "1.4.32"
 }
 
-group = "org.example.pppurple"
+group = "com.github.pppurple"
 version = "1.0.0"
 
 repositories {
