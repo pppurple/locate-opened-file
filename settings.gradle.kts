@@ -1,2 +1,2 @@
-rootProject.name = "manually-select-opened-file"
+rootProject.name = "locate-opened-file"
 
