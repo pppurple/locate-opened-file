@@ -1,14 +1,14 @@
 <idea-plugin>
   <!-- https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-  <id>com.github.pppurple.manually-select-opened-file</id>
-  <name>Manually Select Opened File</name>
+  <id>com.github.pppurple.locate-opened-file</id>
+  <name>Locate Opened File</name>
   <change-notes>Initial release of the plugin.</change-notes>
   <version>1.0.0</version>
   <vendor url="https://github.com/pppurple">pppurple</vendor>
 
   <description><![CDATA[
-    <h1>Manually Select Opened File</h1>
-    <p>Manually select opened file without focusing on the project view.</p>
+    <h1>Locate Opened File</h1>
+    <p>This plugin provides scrolling to opened file without focusing on the Project view.</p>
     <h2>Usage</h2>
     <ol>
       <li>Install the plugin</li>
@@ -28,9 +28,9 @@
   </extensions>
 
   <actions>
-    <action id="pppurple.ManuallySelectOpenedFileAction" class="pppurple.ManuallySelectOpenedFileAction"
-            text="Manually Select Opened File"
-            description="Manually select opened file without focusing on the project view.">
+    <action id="pppurple.LocateOpenedFileAction" class="pppurple.LocateOpenedFileAction"
+            text="Locate Opened File"
+            description="Scroll to opened file without focusing on the Project view.">
       <add-to-group group-id="FileChooser" anchor="last" />
       <!-- keymaps are defined as constants in the com.intellij.openapi.keymap.KeymapManager -->
       <!-- https://plugins.jetbrains.com/docs/intellij/basic-action-system.html#action-declaration-reference -->

@@ -18,7 +18,7 @@ import com.intellij.psi.PsiManager
  * @See: [SelectFileAction.getView]
  * @See: [ProjectViewImpl.MyAutoScrollFromSourceHandler.findSelectInContext]
  */
-class ManuallySelectOpenedFileAction : AnAction() {
+class LocateOpenedFileAction : AnAction() {
     override fun actionPerformed(actionEvent: AnActionEvent) {
         val project = actionEvent.project ?: return
         val projectView = getView(project) ?: return
