@@ -4,6 +4,9 @@ This plugin provides scrolling to opened file without focusing on the Project vi
   
 *IntelliJ has `select opened file` feature by default, but the focus moves to the Project view.*  
 
+## Installation
+[Install via Jetbrains Marketplace](https://plugins.jetbrains.com/plugin/17309)
+
 ## Usage
 - Install the plugin
 - Default keymap is `Shift + Ctrl + S`
