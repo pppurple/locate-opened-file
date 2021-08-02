@@ -4,6 +4,8 @@ This plugin provides scrolling to opened file without focusing on the Project vi
   
 *IntelliJ IDEA has `select opened file` feature by default, but the focus moves to the Project view.*  
 
+![Locate_opened_file_movie_1 0 0](https://user-images.githubusercontent.com/5877712/127907532-da7403ad-3c77-4199-97b9-f3e9e66b00eb.gif)
+
 ## Installation
 - Using IDE built-in plugin system:
     - <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Locate Opened File"</kbd> > <kbd>Install</kbd>
