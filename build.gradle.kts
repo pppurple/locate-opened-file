@@ -1,6 +1,6 @@
 plugins {
     id("org.jetbrains.intellij") version "1.1.2"
-    kotlin("jvm") version "1.4.32"
+    kotlin("jvm") version "1.7.0"
 }
 
 group = "com.github.pppurple"
