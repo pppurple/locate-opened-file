@@ -1,11 +1,5 @@
 <idea-plugin>
   <!-- https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-  <id>com.github.pppurple.locate-opened-file</id>
-  <name>Locate Opened File</name>
-  <change-notes>Initial release of the plugin.</change-notes>
-  <version>1.0.0</version>
-  <vendor url="https://github.com/pppurple">pppurple</vendor>
-
   <description><![CDATA[
     <h1>Locate Opened File</h1>
     <p>This plugin provides scrolling to opened file without focusing on the Project view.</p>
@@ -19,10 +13,6 @@
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <depends>com.intellij.modules.platform</depends>
-
-  <!-- https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html?from=jetbrains.org -->
-  <!-- defined in build.gradle.kts -->
-  <!-- <idea-version since-build="201" /> -->
 
   <extensions defaultExtensionNs="com.intellij">
   </extensions>
