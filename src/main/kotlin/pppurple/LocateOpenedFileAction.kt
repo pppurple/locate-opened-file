@@ -15,7 +15,7 @@ import com.intellij.psi.PsiManager
 
 /**
  * Main action
- * @See: [SelectFileAction.getView]
+ * @See: [com.intellij.ide.projectView.impl.SelectFileAction.getView]
  * @See: [ProjectViewImpl.MyAutoScrollFromSourceHandler.findSelectInContext]
  */
 class LocateOpenedFileAction : AnAction() {
@@ -33,18 +33,15 @@ class LocateOpenedFileAction : AnAction() {
          */
         val context = SmartSelectInContext(psiFile, psiFile)
         val target: SelectInTarget = projectViewPane.createSelectInTarget()
-        context.selectIn(target, false)
+        target.selectIn(context, /* requestFocus */ false)
     }
 
-    private fun getView(project: Project): ProjectViewImpl? {
-        return project.let { ProjectView.getInstance(it) as? ProjectViewImpl }
-    }
+    private fun getView(project: Project): ProjectViewImpl? = project.let { ProjectView.getInstance(it) as? ProjectViewImpl }
 
-    private fun getPsiFile(myProject: Project, file: VirtualFile?): PsiFile? {
-        return if (file == null || !file.isValid) null else PsiManager.getInstance(myProject).findFile(file)
-    }
+    private fun getPsiFile(
+        myProject: Project,
+        file: VirtualFile?,
+    ): PsiFile? = if (file == null || !file.isValid) null else PsiManager.getInstance(myProject).findFile(file)
 
-    private fun getVirtualFile(fileEditor: FileEditor?): VirtualFile? {
-        return fileEditor?.file
-    }
+    private fun getVirtualFile(fileEditor: FileEditor?): VirtualFile? = fileEditor?.file
 }
